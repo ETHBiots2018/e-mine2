@@ -4,7 +4,7 @@ Electrical and electronic devices contain variable amount of chemical elements w
 
 Emine provides manufacturers, shops and consumers a token economy that incentives them <b/>
 
-<img src="http://prntscr.com/ifd0ym"/>
+<img src="https://image.prntscr.com/image/WH8lEmAIRs2_-0J1NtfrMA.png"/>
 
 # Team
 Marco Gigantino <br/>
