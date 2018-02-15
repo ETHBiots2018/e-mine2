@@ -4,7 +4,7 @@ Electrical and electronic devices contain variable amount of chemical elements w
 
 
 # Team
-Marco Gigantino
+Marco Gigantino <br/>
 Tomislav Lipic
 Orhun Özbek
 Marie Hoes
