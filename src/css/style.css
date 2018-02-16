@@ -1,0 +1,223 @@
+body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+
+  .btn-secondary {
+  color: #292b2c;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.btn-secondary:hover {
+  color: #292b2c;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+.btn-secondary:focus, .btn-secondary.focus {
+  -webkit-box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5);
+          box-shadow: 0 0 0 2px rgba(204, 204, 204, 0.5);
+}
+
+.btn-secondary.disabled, .btn-secondary:disabled {
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.btn-secondary:active, .btn-secondary.active,
+.show > .btn-secondary.dropdown-toggle {
+  color: #292b2c;
+  background-color: #e6e6e6;
+  background-image: none;
+  border-color: #adadad;
+}
+
+.form-control-static.form-control-sm, .input-group-sm > .form-control-static.form-control,
+.input-group-sm > .form-control-static.input-group-addon,
+.input-group-sm > .input-group-btn > .form-control-static.btn, .form-control-static.form-control-lg, .input-group-lg > .form-control-static.form-control,
+.input-group-lg > .form-control-static.input-group-addon,
+.input-group-lg > .input-group-btn > .form-control-static.btn {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.form-control-sm, .input-group-sm > .form-control,
+.input-group-sm > .input-group-addon,
+.input-group-sm > .input-group-btn > .btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+}
+
+select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
+.input-group-sm > select.input-group-addon:not([size]):not([multiple]),
+.input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]) {
+  height: 1.8125rem;
+}
+
+.form-control-lg, .input-group-lg > .form-control,
+.input-group-lg > .input-group-addon,
+.input-group-lg > .input-group-btn > .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+}
+
+select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
+.input-group-lg > select.input-group-addon:not([size]):not([multiple]),
+.input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]) {
+  height: 3.166667rem;
+}
+.custom-file {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  height: 2.5rem;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.custom-file-input {
+  min-width: 14rem;
+  max-width: 100%;
+  height: 2.5rem;
+  margin: 0;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+.custom-file-control {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+  line-height: 1.5;
+  color: #464a4c;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.custom-file-control:lang(en)::after {
+  content: "Choose file...";
+}
+
+.custom-file-control::before {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  z-index: 6;
+  display: block;
+  height: 2.5rem;
+  padding: 0.5rem 1rem;
+  line-height: 1.5;
+  color: #464a4c;
+  background-color: #eceeef;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.custom-file-control:lang(en)::before {
+  content: "Browse";
+}
+.custom-file-input {
+  min-width: 14rem;
+  max-width: 100%;
+  height: 2.5rem;
+  margin: 0;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+.form-control-static.form-control-sm, .input-group-sm > .form-control-static.form-control,
+.input-group-sm > .form-control-static.input-group-addon,
+.input-group-sm > .input-group-btn > .form-control-static.btn, .form-control-static.form-control-lg, .input-group-lg > .form-control-static.form-control,
+.input-group-lg > .form-control-static.input-group-addon,
+.input-group-lg > .input-group-btn > .form-control-static.btn {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.form-control-sm, .input-group-sm > .form-control,
+.input-group-sm > .input-group-addon,
+.input-group-sm > .input-group-btn > .btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+}
+
+select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.form-control:not([size]):not([multiple]),
+.input-group-sm > select.input-group-addon:not([size]):not([multiple]),
+.input-group-sm > .input-group-btn > select.btn:not([size]):not([multiple]) {
+  height: 1.8125rem;
+}
+
+.form-control-lg, .input-group-lg > .form-control,
+.input-group-lg > .input-group-addon,
+.input-group-lg > .input-group-btn > .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+}
+
+select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
+.input-group-lg > select.input-group-addon:not([size]):not([multiple]),
+.input-group-lg > .input-group-btn > select.btn:not([size]):not([multiple]) {
+  height: 3.166667rem;
+}
+.input-group-addon.form-control-lg,
+.input-group-lg > .input-group-addon,
+.input-group-lg > .input-group-btn > .input-group-addon.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+}
+
+#alert {display: none}

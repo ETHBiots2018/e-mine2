@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>E-MINE DEMO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+       <span class="navbar-brand">E-MINE</span>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="customer.html">CUSTOMER</a></li>
+        <li><a href="collector.html">COLLECTOR</a></li>
+        <li><a href="manufacturer.html">MANUFACTURER</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+ <!-- <div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Who Am I?</h3>
+  <img src="bird.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h3>I'm an adventurer</h3>
+</div>  -->
+
+<!-- Second Container -->
+ <!-- <div class="container-fluid bg-2 text-center">
+  <h3 class="margin">What Am I?</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </a>
+</div>  -->
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">ELECTRONIC WASTE DETAILS</h3>
+<br>
+  <div class="row">
+    <div class="col-sm-1">
+
+
+    </div>
+    <div class="col-sm-10 text-left"> 
+<form>
+    <div class="form-group row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Name of the waste</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Name">
+    </div>
+  </div>
+
+  <div class="form-group row">
+        <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Type</label>
+          <div class="col-sm-10">
+    <select class="form-control form-control-lg">
+      <option>Phone</option>
+      <option>Laptop</option>
+      <option>TV</option>
+      <option>Tablet</option>
+      <option>Workstation</option>
+      <option>Display</option>
+    </select>
+          </div>
+  </div>
+  <div class="form-group row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Product ID</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control form-control-lg" id="pid" placeholder="ID" oninput="show_hide()">
+    </div>
+  </div>
+  <div class="form-group row">
+   <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Upload Picture</label>
+
+  <div class="col-sm-10">
+    <input type="file" id="inputGroupFile01">
+      <label class="custom-file-label" for="inputGroupFile01"></label>
+  </div>
+
+
+</div>
+
+
+  <div class="form-group row">
+    <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Additional Information</label>
+    <div class="col-sm-10">
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    
+  </div>
+  <p id="alert" class="text-center alert alert-success" >Approximate amount of tokens: <span>0.5</span></p>
+  <button type="submit" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-send"></span> POST</button>
+</form>
+
+    </div>
+     <div class="col-sm-1"> 
+    </div> 
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>DEMO SHOWCASE APPLICATION </p> 
+</footer>
+
+</body>
+<script type="text/javascript">
+function show_hide() {
+   document.getElementById("alert").style.display="block"; 
+}
+</script>
+</html>
