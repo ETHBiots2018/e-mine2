@@ -15,7 +15,7 @@ Emine provides manufacturers, shops and consumers a token economy that incentive
  
  - <b>Shops</b> earn EMineRewardToken for each electronical device that they recycle, these tokens can be used for discounts at manufacturers.
 
-<img src="docs/emine.png" width="700">
+<img src="docs/emine.png" width="500">
 
 # Team
 Marie Hoes <br/>
