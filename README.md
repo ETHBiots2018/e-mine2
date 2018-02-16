@@ -6,9 +6,11 @@ Emine provides manufacturers, shops and consumers a token economy that incentive
 
  - <b>Manufacturers</b> can track the lifecycle information of any electronical device that they produce. They can also use this information for public recognition. <br/>
  
- - <b>Consumers</b> earn EMineRewardToken for each they 
+ - <b>Consumers</b> earn EMineRewardToken for each electronical device that they return, these tokens can be used for discounts at electronics shops.
+ 
+ - <b>Shops</b> earn EMineRewardToken for each electronical device that they recycle, these tokens can be used for discounts at manufacturers.
 
-<img width="700" height="700" src="https://image.prntscr.com/image/WH8lEmAIRs2_-0J1NtfrMA.png"/>
+<img width="500" height="500" src="https://image.prntscr.com/image/WH8lEmAIRs2_-0J1NtfrMA.png"/>
 
 # Team
 Marco Gigantino <br/>
