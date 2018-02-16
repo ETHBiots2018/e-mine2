@@ -15,9 +15,9 @@ Emine provides manufacturers, shops and consumers a token economy that incentive
 <img width="500" height="500" src="https://image.prntscr.com/image/WH8lEmAIRs2_-0J1NtfrMA.png"/>
 
 # Team
+Marie Hoes <br/>
+Orhun Özbek <br/>
 Marco Gigantino <br/>
 Tomislav Lipic <br/>
-Orhun Özbek <br/>
-Marie Hoes <br/>
 Zanis Timsans 
 
