@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Admin - E-mine Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span class="navbar-brand">E-MINE</span>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="admin.html">ADMIN</a></li>
+        <li><a href="customer.html">CUSTOMER</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="manufacturer.html">MANUFACTURER</a></li>
+        <li><a href="recycler.html">RECYCLER</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Container (Grid) -->
+  <div class="container-fluid bg-2 text-center">
+    <h3 class="margin">ADMIN MENU</h3>
+    <h4>Hidden key of Admin Account (for experimental purposes): cb9313b2b48e819bdb1788523adf7ecd3484b4dc398627c43969ccbd7c60917a</h4>
+    <br>
+      <form>
+      <div class="col-sm-4">
+        <div class="form-group row">
+          <label for="colFormLabelLg" class="col-sm-2 col-form-label col-form-label-lg">Type</label>
+          <div class="col-sm-10">
+            <select id="AddressType" class="form-control form-control-lg">
+              <option>Recycler</option>
+              <option>Manufacturer</option>
+              <option>Shop</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-8">
+          <div class="form-group row">
+
+            <div class="col-sm-10">
+
+              <input type="text" class="form-control form-control-lg" id="ChangeAddress" placeholder="Address" />
+            </div>
+          </div>
+      </div>
+
+      <button id="addAccountButton" type="submit" class="btn btn-primary btn-lg btn-block">
+        <span class="glyphicon glyphicon-new-window"></span> Add Account</button>
+
+      </form>
+
+
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="container-fluid bg-4 text-center">
+    <p>DEMO SHOWCASE APPLICATION </p>
+  </footer>
+
+  <script type="text/javascript">
+    function show_hide() {
+        document.getElementById("alert").style.display="block";
+    }
+  </script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/app.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+
+</body>
+
+</html>

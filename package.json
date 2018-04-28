@@ -1,5 +1,5 @@
 {
-  "name": "emine",
+  "name": "e-mine2",
   "version": "1.0.0",
   "description": "",
   "main": "truffle.js",
@@ -7,15 +7,18 @@
     "test": "test"
   },
   "scripts": {
-    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "lite-server": "^2.3.0"
-  },
   "dependencies": {
-    "zeppelin-solidity": "^1.6.0"
+    "body-parser": "^1.15.2",
+    "express": "^4.16.3",
+    "storj-lib": "^6.3.2",
+    "uuid": "^3.2.1",
+    "zeppelin-solidity": "^1.8.0",
+    "mongoose": ">=4.1.11",
+    "truffle-hdwallet-provider": "0.0.3",
+    "truffle-contract": "3.0.5"
   }
 }
