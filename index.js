@@ -259,7 +259,7 @@ app.get('/recycler/recycle/:id&:toAddress', function(req,res){
 
 app.get("/recycler-app.apk", function(req, res){
     console.log( "Requested file: download apk");
-    var file = __dirname + '/app-debug.apk';
+    var file = __dirname + '/app-release.apk';
     res.sendFile(file); // Set disposition and send it.
 });
 
