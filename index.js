@@ -240,21 +240,28 @@ app.get('/recycler/recycle/:id&:toAddress', function(req,res){
         var EmineArtifact = require('./build/contracts/EMine.json');
         EmineContract = TruffleContract(EmineArtifact);
         EmineContract.setProvider(provider);
+        var txHash = null;
 
         EmineContract.deployed().then(function (instance) {
             emineInstance = instance;
-            return emineInstance.recycleProduct(productId, toAddress);
-    
+            return emineInstance.recycleProduct(productId, toAddress,  {from: accounts[0], gas: 2000000});
+            
           }).then(function (result) {
             console.log("Returned Product!");
+            res.status(200).send("Returned Product with ID: " + productId);
           }).catch(function (err) {
             console.log(err.message);
         });
 
     });
-
+    
 });
 
+app.get("/recycler-app.apk", function(req, res){
+    console.log( "Requested file: download apk");
+    var file = __dirname + '/app-debug.apk';
+    res.sendFile(file); // Set disposition and send it.
+});
 
 app.get('/:name', function(req, res){
     var fileName = req.params.name;

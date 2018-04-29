@@ -27,12 +27,6 @@ App = {
 
       web3.eth.getAccounts(function (error, accounts) {
         if (error || accounts.length == 0) {
-          var b = document.getElementsByClassName('btn');
-          if(b.length >= 2){
-          b[0].setAttribute("href", "");
-          b[0].setAttribute("disabled", "");
-          b[1].setAttribute("href", "");
-          b[1].setAttribute("disabled", "");}
           alert("No accounts detected, please unlock your account." );
         }
       });
@@ -43,13 +37,6 @@ App = {
       // set the provider you want from Web3.providers
       //App.web3Provider = new Web3.providers.HttpProvider('http://127.0.0.1:7545');
       //web3 = new Web3(App.web3Provider);
-
-      var b = document.getElementsByClassName('btn');
-      if(b.length >= 2){
-      b[0].setAttribute("href", "");
-      b[0].setAttribute("disabled", "");
-      b[1].setAttribute("href", "");
-      b[1].setAttribute("disabled", "");}
       alert("No web3 provider detected, please use a provider such as Metamask to start." );
     }
 
@@ -57,31 +44,35 @@ App = {
   },
 
   initContract: function () {
-    $.getJSON('../build/contracts/EMine.json', function (data) {
+    a = $.getJSON('../build/contracts/EMine.json', function (data) {
       var EmineArtifact = data;
       App.contracts.Emine = TruffleContract(EmineArtifact);
       App.contracts.Emine.setProvider(App.web3Provider);
     });
 
-    $.getJSON('../build/contracts/RewardOracle.json', function (data) {
+    b = $.getJSON('../build/contracts/RewardOracle.json', function (data) {
       var RewardOracleArtifact = data;
       App.contracts.RewardOracle = TruffleContract(RewardOracleArtifact);
       App.contracts.RewardOracle.setProvider(App.web3Provider);
     });
 
-    $.getJSON('../build/contracts/EMineLifecycleToken.json', function (data) {
+    c = $.getJSON('../build/contracts/EMineLifecycleToken.json', function (data) {
       var EMineLifecycleTokenArtifact = data;
       App.contracts.EMineLifecycleToken = TruffleContract(EMineLifecycleTokenArtifact);
       App.contracts.EMineLifecycleToken.setProvider(App.web3Provider);
     });
 
-    $.getJSON('../build/contracts/EMineRewardToken.json', function (data) {
+    d = $.getJSON('../build/contracts/EMineRewardToken.json', function (data) {
       var EMineRewardTokenArtifact = data;
       App.contracts.EMineRewardToken = TruffleContract(EMineRewardTokenArtifact);
       App.contracts.EMineRewardToken.setProvider(App.web3Provider);
 
 
-    }).then(function (result) {
+    });
+    
+    
+    
+    Promise.all([a,b,c,d]).then(function (result) {
       App.markManufacturers();
       if (document.getElementById("ItemListManufacturer")) App.getProducts();
       if (document.getElementById("ItemListShop")) App.getProductsShop();
@@ -306,12 +297,6 @@ App = {
 
         emineInstance.userType(account).then(function (userType) {
             if(userType != userTypeWanted){
-              var b = document.getElementsByClassName('btn');
-              if(b.length >= 2){
-              b[0].setAttribute("href", "");
-              b[0].setAttribute("disabled", "");
-              b[1].setAttribute("href", "");
-              b[1].setAttribute("disabled", "");}
               alert("Address: "+ account + " is not a " + App.UserType[userTypeWanted] + " address, please use Admin panel to give authorization" );
             }
 
