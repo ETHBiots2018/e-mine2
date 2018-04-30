@@ -60,6 +60,14 @@
         <h4>Click a token to show its metadata</h4>
       </div>
     </div>
+
+    <div class="row">
+        <div class="col-sm-6 text-center">
+          <p id= "qrtext"></p>
+          <div id="qrcode" align="center" valign="center"></div>
+         
+        </div>
+    </div>
   </div>
 
   <!-- Footer -->
@@ -71,10 +79,35 @@
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script type="text/javascript" src="js/qrcode.js"></script>
   <script src="js/app.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/web3.min.js"></script>
   <script src="js/truffle-contract.js"></script>
+
+  <script type="text/javascript">
+
+    setTimeout(function () {
+    $('.list-group-item').click(function (e) {
+    
+    e.preventDefault();
+    $that = $(this);
+
+    document.getElementById("qrcode").innerHTML = '';
+    
+    document.getElementById('qrtext').innerHTML = "Use this QR code to recycle this product with Recycler App";
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+      text: $that.children('h4')[0].innerHTML.match(/(\d+)$/)[0],
+      width: 128,
+      height: 128,
+      colorDark : "#000000",
+      colorLight : "#ffffff",
+      correctLevel : QRCode.CorrectLevel.H
+    });
+    
+    });}, 1500);
+    </script>
+    
 
 </body>
 
